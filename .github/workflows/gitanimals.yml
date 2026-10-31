@@ -1,0 +1,34 @@
+name: GitAnimals dark farm
+
+# The light README image is the live farm; this keeps a dark-mode copy in dist/.
+
+on:
+  schedule:
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/gitanimals.yml, scripts/farm_dark.py]
+
+permissions:
+  contents: write
+
+jobs:
+  farm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render dark farm
+        run: python3 scripts/farm_dark.py ${{ github.repository_owner }} dist/gitanimals-dark.svg
+
+      - name: Commit
+        run: |
+          git add dist/gitanimals-dark.svg
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update dark farm"
+          git pull --rebase -q
+          git push

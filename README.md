@@ -70,7 +70,10 @@
 
 <div align="center">
   <a href="https://www.gitanimals.org/">
-    <img src="https://render.gitanimals.org/farms/chu-jiaming" width="600" height="300" alt="GitAnimals farm" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/gitanimals-dark.svg" />
+      <img src="https://render.gitanimals.org/farms/chu-jiaming" width="600" height="300" alt="GitAnimals farm" />
+    </picture>
   </a>
 </div>
 
