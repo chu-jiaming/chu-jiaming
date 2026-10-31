@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://chu-jiaming.github.io">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Jiaming+Chu+%F0%9F%91%8B;M.S.+student+%40+Shanghai+Jiao+Tong+University;3D+Reconstruction+%C2%B7+Generative+Models;NeRF+%2F+3D+Gaussian+Splatting+%2F+World+Models" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=720&lines=Hi+there%2C+I'm+Jiaming+Chu+%F0%9F%91%8B;M.S.+student+%40+Shanghai+Jiao+Tong+University;3D+Reconstruction+%C2%B7+Generative+Models;NeRF+%2F+3D+Gaussian+Splatting+%2F+World+Models" alt="Typing SVG" />
 </a>
 
 <p>
