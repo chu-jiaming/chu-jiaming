@@ -55,8 +55,8 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=github_dark" />
-    <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=swift" alt="GitHub stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=dark_github" />
+    <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=light_github" alt="GitHub stats" />
   </picture>
 </div>
 
