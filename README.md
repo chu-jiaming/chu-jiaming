@@ -74,7 +74,7 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/pacman-contribution-graph-dark.svg" />
-    <img src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/pacman-contribution-graph-dark.svg" />
+    <img src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" />
   </picture>
 </div>

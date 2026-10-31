@@ -16,16 +16,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - uses: actions/checkout@v4
+
       - uses: abozanona/pacman-contribution-graph@v5.0.0
         with:
           github_user_name: ${{ github.repository_owner }}
           games: pacman
           hide_month_labels: "false"
 
-      # Only workflow writing the output branch, so a full replace is fine.
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit SVGs
+        run: |
+          git add dist/pacman-contribution-graph.svg dist/pacman-contribution-graph-dark.svg
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update Pac-Man graph"
+          git pull --rebase -q
+          git push
