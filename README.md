@@ -66,16 +66,6 @@
   </a>
 </div>
 
-## Recent activity
-
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#5](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/5) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
-2. 🎉 Merged PR [#2](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/2) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
-3. 💪 Opened PR [#5](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/5) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
-4. 🎉 Merged PR [#4](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/4) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
-5. 💪 Opened PR [#4](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/4) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
-<!--END_SECTION:activity-->
-
 ---
 
 <div align="center">
