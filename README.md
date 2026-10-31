@@ -56,12 +56,12 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=dark_github" />
-    <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=light_github" alt="GitHub stats" />
+    <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=light_github" alt="GitHub stats" width="49%" />
   </picture>
   <a href="https://gist.github.com/chu-jiaming/c49904924076861be51d20e4f9e70d64">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/productive-dark.svg" />
-      <img src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/productive.svg" alt="When I commit" />
+      <img src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/main/dist/productive.svg" alt="When I commit" width="49%" />
     </picture>
   </a>
 </div>
