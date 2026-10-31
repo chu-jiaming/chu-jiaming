@@ -54,7 +54,10 @@
 ## GitHub stats
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=swift" alt="GitHub stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=github_dark" />
+    <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=swift" alt="GitHub stats" />
+  </picture>
 </div>
 
 ## Recent activity
