@@ -54,8 +54,7 @@
 ## GitHub stats
 
 <div align="center">
-  <img height="165" src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/stats.svg" alt="GitHub stats" />
-  <img height="165" src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/top-langs.svg" alt="Top languages" />
+  <img src="https://github-stats-extended.vercel.app/api?username=chu-jiaming&rank_icon=github&show_icons=true&include_all_commits=true&theme=swift" alt="GitHub stats" />
 </div>
 
 ## Recent activity
