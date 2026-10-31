@@ -1,0 +1,20 @@
+name: Productive box
+
+# Writes "when do I commit" stats into a pinned gist.
+# GH_TOKEN: classic token with gist scope (add repo scope to include private repos).
+
+on:
+  schedule:
+    - cron: "0 16 * * *"  # 00:00 Asia/Shanghai
+  workflow_dispatch:
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: maxam2017/productive-box@v1.2.0
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: c49904924076861be51d20e4f9e70d64
+          TIMEZONE: Asia/Shanghai
