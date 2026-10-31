@@ -68,12 +68,6 @@
 5. 💪 Opened PR [#4](https://github.com/chu-jiaming/PoseGuard-NeRF/pull/4) in [chu-jiaming/PoseGuard-NeRF](https://github.com/chu-jiaming/PoseGuard-NeRF)
 <!--END_SECTION:activity-->
 
-## 🎧 Recently played
-
-<!--START_SECTION:music-->
-_Nothing scrobbled yet._
-<!--END_SECTION:music-->
-
 ---
 
 <div align="center">
