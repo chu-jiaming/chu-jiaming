@@ -66,6 +66,14 @@
   </a>
 </div>
 
+## GitAnimals
+
+<div align="center">
+  <a href="https://www.gitanimals.org/">
+    <img src="https://render.gitanimals.org/farms/chu-jiaming" width="600" height="300" alt="GitAnimals farm" />
+  </a>
+</div>
+
 ---
 
 <div align="center">
