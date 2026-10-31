@@ -1,12 +1,22 @@
 name: Productive box
 
-# Writes "when do I commit" stats into a pinned gist.
-# GH_TOKEN: classic token with gist scope (add repo scope to include private repos).
+# Writes "when do I commit" stats (public repos) into a pinned gist, then
+# renders that gist as light/dark SVG cards under dist/ for the README.
+# GH_TOKEN: classic token with gist scope.
 
 on:
   schedule:
     - cron: "0 16 * * *"  # 00:00 Asia/Shanghai
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/productive-box.yml, scripts/productive_card.py]
+
+permissions:
+  contents: write
+
+env:
+  GIST_ID: c49904924076861be51d20e4f9e70d64
 
 jobs:
   update-gist:
@@ -16,5 +26,21 @@ jobs:
       - uses: maxam2017/productive-box@v1.2.0
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: c49904924076861be51d20e4f9e70d64
           TIMEZONE: Asia/Shanghai
+
+      - uses: actions/checkout@v4
+
+      - name: Render cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/productive_card.py "$GIST_ID" dist
+
+      - name: Commit cards
+        run: |
+          git add dist/productive.svg dist/productive-dark.svg
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update productive card"
+          git pull --rebase -q
+          git push
