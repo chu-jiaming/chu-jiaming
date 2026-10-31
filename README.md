@@ -54,8 +54,8 @@
 ## GitHub stats
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=chu-jiaming&show_icons=true&include_all_commits=true&hide_border=true&theme=transparent&title_color=2F81F7&icon_color=2F81F7" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chu-jiaming&layout=compact&hide_border=true&theme=transparent&title_color=2F81F7&langs_count=6" alt="Top languages" />
+  <img height="165" src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/stats.svg" alt="GitHub stats" />
+  <img height="165" src="https://raw.githubusercontent.com/chu-jiaming/chu-jiaming/output/top-langs.svg" alt="Top languages" />
 </div>
 
 ## Recent activity
