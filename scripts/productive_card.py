@@ -30,17 +30,43 @@ def fetch(gist_id):
     return title, rows
 
 
+# Animations ported from github-stats-extended (packages/core/src/common/Card.ts
+# getAnimations, cards/top-languages.ts .stagger / growWidthAnimation, and
+# common/render.ts createProgressNode).
+ANIMATIONS = (
+    "@keyframes fadeInAnimation{from{opacity:0}to{opacity:1}}"
+    "@keyframes growWidthAnimation{from{width:0}to{width:100%}}"
+    ".title{animation:fadeInAnimation 0.8s ease-in-out forwards}"
+    ".stagger{opacity:0;animation:fadeInAnimation 0.3s ease-in-out forwards}"
+    ".progress{animation:growWidthAnimation 0.6s ease-in-out forwards}"
+)
+
+
+def progress_node(x, y, width, color, track, pct, delay):
+    """Mirror of createProgressNode: the bar fills a nested <svg> sized to pct%,
+    so animating the inner rect's width from 0 to 100% grows it to pct."""
+    pct = min(max(pct, 2), 100)
+    return (
+        f'<svg x="{x}" y="{y}" width="{width}" height="8">'
+        f'<rect width="{width}" height="8" rx="4" fill="{track}"/>'
+        f'<svg width="{pct}%" height="8">'
+        f'<rect class="progress" height="8" rx="4" fill="{color}" style="animation-delay:{delay}ms"/>'
+        f"</svg></svg>"
+    )
+
+
 def render(title, rows, c):
     body = []
     for i, (emoji, label, commits, pct) in enumerate(rows):
         y = 80 + i * 28
-        fill = BAR_W * float(pct) / 100
+        delay = (i + 3) * 150
         body.append(
+            f'<g class="stagger" style="animation-delay:{delay}ms">'
             f'<text x="25" y="{y}" class="label">{escape(emoji)} {escape(label)}</text>'
             f'<text x="190" y="{y}" class="label" text-anchor="end">{commits}</text>'
-            f'<rect x="{BAR_X}" y="{y - 9}" width="{BAR_W}" height="8" rx="4" fill="{c["track"]}"/>'
-            f'<rect x="{BAR_X}" y="{y - 9}" width="{fill:.1f}" height="8" rx="4" fill="{c["title"]}"/>'
+            f'{progress_node(BAR_X, y - 9, BAR_W, c["title"], c["track"], float(pct), delay + 300)}'
             f'<text x="{WIDTH - 25}" y="{y}" class="value" text-anchor="end">{pct}%</text>'
+            f"</g>"
         )
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="195" viewBox="0 0 {WIDTH} 195">'
@@ -48,6 +74,7 @@ def render(title, rows, c):
         f".title{{font:600 18px 'Segoe UI',Ubuntu,Sans-Serif;fill:{c['title']}}}"
         f".label{{font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:{c['text']}}}"
         f".value{{font:600 14px 'Segoe UI',Ubuntu,'Helvetica Neue',Sans-Serif;fill:{c['text']}}}"
+        f"{ANIMATIONS}"
         f"</style>"
         f'<rect x="0.5" y="0.5" rx="4.5" width="{WIDTH - 1}" height="194" fill="{c["bg"]}" stroke="{c["border"]}"/>'
         f'<text x="25" y="35" class="title">{escape(title)}</text>'
