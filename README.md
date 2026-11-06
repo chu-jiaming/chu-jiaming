@@ -25,6 +25,7 @@
 
 | Project | Description |
 | --- | --- |
+| [**VGGT-Splat**](https://github.com/chu-jiaming/VGGT-Splat) · [page](https://chu-jiaming.github.io/vggt-splat/) | How many frames does a casual capture need, and when do feed-forward VGGT poses beat COLMAP for 3D Gaussian Splatting? 6 scenes, 8 to all frames. |
 | [**PoseGuard-NeRF**](https://github.com/chu-jiaming/PoseGuard-NeRF) · [page](https://chu-jiaming.github.io/poseguard-nerf/) | When does joint camera-pose optimization help NeRF, and when does it make the world drift? 45 controlled experiments. |
 | [**qingzhou**](https://github.com/chu-jiaming/qingzhou) | Code for the National University Students Intelligent Car Race (C++). |
 | [**dotfiles**](https://github.com/chu-jiaming/dotfiles) | My macOS development setup. |
