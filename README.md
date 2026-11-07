@@ -50,7 +50,6 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Conda](https://img.shields.io/badge/-Conda-44A833?style=flat-square&logo=anaconda&logoColor=white)
 ![uv](https://img.shields.io/badge/-uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
-![Claude](https://img.shields.io/badge/-Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
 
 ## GitHub stats
 
