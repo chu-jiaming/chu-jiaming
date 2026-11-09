@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://chu-jiaming.github.io">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=720&lines=Hi+there%2C+I'm+Jiaming+Chu+%F0%9F%91%8B;M.S.+student+%40+Shanghai+Jiao+Tong+University;3D+Reconstruction+%C2%B7+Generative+Models;NeRF+%2F+3D+Gaussian+Splatting+%2F+World+Models" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=720&lines=Hi+there%2C+I'm+Jiaming+Chu+%F0%9F%91%8B;M.S.+student+%40+Shanghai+Jiao+Tong+University;3D%2F4D+Reconstruction+%C2%B7+Generative+Models;NeRF+%2F+3D+Gaussian+Splatting+%2F+World+Models" alt="Typing SVG" />
 </a>
 
 <p>
@@ -15,11 +15,11 @@
 
 ## About me
 
-- 🎓 M.S. in Electronic Information at **Shanghai Jiao Tong University** (2025–); B.Eng. in Intelligent Sensing Engineering at **Harbin Institute of Technology** (2021–2025)
-- 🔬 Interested in **generative models, large language models, 3D reconstruction and world models**
+- 🎓 M.S. in Electronic Information at **Shanghai Jiao Tong University** (2025–); B.Eng. in IntelliSense Engineering at **Harbin Institute of Technology** (2021–2025)
+- 🔬 Interested in **generative models, large language models, 3D/4D reconstruction and world models**
 - 🧭 Lately: how radiance fields behave when inputs are imperfect (e.g. noisy camera poses), and making evaluation metrics measure what they claim to
-- 🔭 Currently building: feed-forward 3D (VGGT) + 3D Gaussian Splatting from casual phone videos
-- 🏆 ICM 2024 Honorable Mention · China Sensor Innovation Competition 2023, National 2nd Prize · Smart Car team captain @ HIT
+- 🔭 Going forward: combining generative models with 3D/4D reconstruction
+- 🏆 ICM 2024 Honorable Mention · China Sensor Innovation Competition 2024, National 2nd Prize · Smart Car team captain @ HIT
 
 ## Featured
 
@@ -27,6 +27,7 @@
 | --- | --- |
 | [**VGGT-Splat**](https://github.com/chu-jiaming/VGGT-Splat) · [page](https://chu-jiaming.github.io/vggt-splat/) | How many frames does a casual capture need, and when do feed-forward VGGT poses beat COLMAP for 3D Gaussian Splatting? 6 scenes, 8 to all frames. |
 | [**PoseGuard-NeRF**](https://github.com/chu-jiaming/PoseGuard-NeRF) · [page](https://chu-jiaming.github.io/poseguard-nerf/) | When does joint camera-pose optimization help NeRF, and when does it make the world drift? 45 controlled experiments. |
+| [**AFVE-Bench**](https://chu-jiaming.github.io/papers/afve-bench.pdf) · preprint | When a user asks for a rewrite under a new frame, does the old one still leak through? 192 bilingual four-turn conversations; 4,204 responses from 11 model configurations, blind-annotated by two raters. |
 | [**qingzhou**](https://github.com/chu-jiaming/qingzhou) | Code for the National University Students Intelligent Car Race (C++). |
 | [**dotfiles**](https://github.com/chu-jiaming/dotfiles) | My macOS development setup. |
 
@@ -43,6 +44,11 @@
 ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+
+**3D Vision**<br/>
+![COLMAP](https://img.shields.io/badge/-COLMAP-555555?style=flat-square)
+![3DGS](https://img.shields.io/badge/-3DGS-555555?style=flat-square)
+![NeRF](https://img.shields.io/badge/-NeRF-555555?style=flat-square)
 
 **Tools**<br/>
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
