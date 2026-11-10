@@ -27,7 +27,7 @@
 | --- | --- |
 | [**VGGT-Splat**](https://github.com/chu-jiaming/VGGT-Splat) · [page](https://chu-jiaming.github.io/vggt-splat/) | How many frames does a casual capture need, and when do feed-forward VGGT poses beat COLMAP for 3D Gaussian Splatting? 6 scenes, 8 to all frames. |
 | [**PoseGuard-NeRF**](https://github.com/chu-jiaming/PoseGuard-NeRF) · [page](https://chu-jiaming.github.io/poseguard-nerf/) | When does joint camera-pose optimization help NeRF, and when does it make the world drift? 45 controlled experiments. |
-| [**AFVE-Bench**](https://chu-jiaming.github.io/papers/afve-bench.pdf) · preprint | When a user asks for a rewrite under a new frame, does the old one still leak through? 192 bilingual four-turn conversations; 4,204 responses from 11 model configurations, blind-annotated by two raters. |
+| [**AFVE-Bench**](https://arxiv.org/abs/2611.10541) · arXiv | When a user asks for a rewrite under a new frame, does the old one still leak through? 192 bilingual four-turn conversations; 4,204 responses from 11 model configurations, blind-annotated by two raters. |
 | [**qingzhou**](https://github.com/chu-jiaming/qingzhou) | Code for the National University Students Intelligent Car Race (C++). |
 | [**dotfiles**](https://github.com/chu-jiaming/dotfiles) | My macOS development setup. |
 
